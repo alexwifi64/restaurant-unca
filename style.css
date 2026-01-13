@@ -31,11 +31,14 @@ h2 {
 	font-family: "Ferionapi";
 	margin: 0 0 0.05em 0;
 	font-weight: unset;
+	letter-spacing: -0.01rem;
 }
 
 p {
 	font-family: "Velvetyne";
 	margin-top: 0;
+	letter-spacing: -0.005rem;
+	line-height: 1.25em;
 }
 
 button {
