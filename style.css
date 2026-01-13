@@ -9,15 +9,32 @@ html, body {
     background-color: aliceblue;
 }
 
+@font-face {
+	font-family: "Ferionapi";
+	src: url('fonts/Feroniapi-MediumItalic.otf') format('opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Velvetyne";
+	src: url('fonts/Velvelyne-Book.otf') format('opentype');
+	font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
 	margin-top: 0;
 }
 
 h2 {
+	font-family: "Ferionapi";
 	margin: 0 0 0.05em 0;
+	font-weight: unset;
 }
 
 p {
+	font-family: "Velvetyne";
 	margin-top: 0;
 }
 
@@ -30,9 +47,18 @@ img {
 	/*margin: 0;*/
 }
 
+#background {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/000007.webp");
+  background-position: center;
+  background-size: cover;
+}
+
 .main-container {
 	position: relative;
-  	top: 15%;
+  top: 15%;
 	width: 50%;
 	height: 70%;
 	margin: 0 auto;
@@ -56,6 +82,7 @@ img {
 	margin-bottom: 0;
 	width: 20%;
 	margin-right: 0.175em;
+	margin-left: auto;
 }
 
 #main-text {
@@ -64,11 +91,41 @@ img {
 	box-sizing: border-box;
 }
 
-#bg-img {
+/*#bg-img {
 	position: absolute;
 	width: 100%;
-}
+}*/
 
 #logo {
-	width: 15%;
+	width: 50%;
+}
+
+/* ==================================== MOBILE ====================================== */
+/* =================================== PORTRAIT ===================================== */
+
+@media (max-width: 700px) {
+
+	.main-container {
+		top: 7.5%;
+		width: 85%;
+		height: 85%;
+	}
+
+	#logo {
+		width: 65%;
+	}
+
+	#header p {
+		width: 60%;
+	}
+
+	#main-text {
+		padding-right: 1em;
+	} 
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+	#logo {
+		width: 50%;
+	}
 }
