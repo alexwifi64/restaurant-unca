@@ -46,7 +46,7 @@ h2 {
 
 p {
 	font-family: "Inter";
-	font-size: 14px;
+	font-size: 16px;
 	margin: 0;
 	letter-spacing: -0.01rem;
 	line-height: 1.3em;
@@ -62,7 +62,8 @@ button {
   padding-inline: 0.5em;
   padding-top: 0.2em;
   padding-bottom: 0.3em;
-  margin-block: 0.75em;
+  /*margin-block: 1.5em;*/
+  color: black;
 }
 
 button:hover {
@@ -119,10 +120,10 @@ input {
 
 .main-container {
 	position: relative;
-  top: 15%;
+  /*top: 7em;*/
 	width: 35%;
-	height: 70%;
-	margin: 0 auto;
+	height: 100%;
+	/*left: 2em;*/
 	padding: 1.5em;
 	/*padding-top: 1em;*/
   box-sizing: border-box;
@@ -137,8 +138,23 @@ input {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: .5em;
-  display: none;
+  margin-bottom: 3em;
+  /*display: none;*/
+}
+
+.imgtext-container {
+	display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-block: .75em;
+}
+
+.ilus {
+	width: 4em;
+}
+
+.separador {
+	height: 2em;
 }
 
 #buttons-container {
@@ -167,11 +183,11 @@ input {
 #logo {
 	width: 100px;
 	z-index: 100;
-  position: absolute;
-  left: calc(50% - 50px);
-  top: 2em;
-  -webkit-filter: drop-shadow(0 0 20px #222);
-  filter: drop-shadow(0 0 20px #222);
+/*  position: absolute;
+  left: 2.5em;
+  top: 2em;*/
+/*  -webkit-filter: drop-shadow(0 0 20px #222);
+  filter: drop-shadow(0 0 20px #222);*/
 }
 
 /* ==================================== MOBILE ====================================== */
