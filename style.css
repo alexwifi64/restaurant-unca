@@ -136,6 +136,16 @@ input {
   scrollbar-width: none;
 }
 
+.fadeout {
+	width: 35%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+	height: 5em;
+	background: linear-gradient(0deg,rgba(254, 253, 249, 1) 0%, rgba(0, 0, 0, 0) 100%);
+	border-radius: 2px;
+}
+
 #header {
   width: 100%;
   display: flex;
@@ -198,14 +208,19 @@ input {
 @media (max-width: 700px) {
 
 	.background {
-		height: 50%;
+		height: 40%;
 		bottom: 0;
 	}
 
 	.main-container {
 		width: 100%;
-    height: 50%;
+    height: 60%;
     padding: 1em;
+	}
+
+	.fadeout {
+		width: 100%;
+  	bottom: 40%;
 	}
 
 	.main-container p {
